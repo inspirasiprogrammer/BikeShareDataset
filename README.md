@@ -16,3 +16,8 @@ python -m streamlit run dashboard.py
 ```
 https://bikesharedataset.streamlit.app/
 ```
+
+## Pertanyaan Bisnis
+- Apakah lebih banyak orang yang menyewa sepeda pada hari kerja atau hari libur?
+- Selama musim apa permintaan penyewaan sepeda cenderung meningkat?
+- Bagaimana perkembangan kinerja penyewa sepeda dari tahun 2011 hingga 2022?
