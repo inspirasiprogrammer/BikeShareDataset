@@ -91,3 +91,16 @@ ax.set_title("Performance 2011 VS 2012")
 
 # Menampilkan diagram lingkaran pada aplikasi Streamlit
 st.pyplot(fig)
+
+
+st.subheader(" Perbandingan Antara Humidity dan Count")
+
+# Membuat scatter plot untuk melihat hubungan antara kelembapan (humidity) dan jumlah penyewa sepeda (cnt)
+fig, ax = plt.subplots(figsize=(15, 10))
+sns.scatterplot(x='hum', y='cnt', data=main_df, hue='workingday', palette='viridis', ax=ax)
+ax.set_title("Perbandingan Antara Humidity dan Count", fontsize=20)
+ax.set_xlabel("Humidity", fontsize=15)
+ax.set_ylabel("Count", fontsize=15)
+
+# Menampilkan scatter plot pada aplikasi Streamlit
+st.pyplot(fig)
